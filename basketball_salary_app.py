@@ -4,9 +4,9 @@ import pandas as pd
 import numpy as np
 import sklearn
 import pickle
-basketball_model = pickle.load(open("C:\\Users\\HP\\Downloads\\randomf_model.sav", "rb"))
+basketball_model = pickle.load(open("randomf_model.sav", "rb"))
 st.title("BasketBall Salary App")
-image = Image.open('C:\\Users\\HP\\Downloads\\pexels-cottonbro-studio-6767231.jpg')
+image = Image.open('pexels-cottonbro-studio-6767231.jpg')
 st.image(image, width= 350)
 def user_report():
     rating = st.number_input('rating: ',min_value=0)
