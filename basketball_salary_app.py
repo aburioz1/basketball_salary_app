@@ -42,5 +42,6 @@ user_data = user_report()
 st.write(user_data)
 prediction = basketball_model.predict(user_data)
 st.success(prediction)
+st.subheader('$' +str(np.round(prediction[0], 2)))
 
 
